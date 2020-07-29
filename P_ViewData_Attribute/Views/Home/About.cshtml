@@ -1,0 +1,20 @@
+﻿
+
+<h1>@ViewBag.Message</h1>
+<h1>@ViewBag.Number</h1>
+@foreach (var item in ViewBag.Numbers)
+{
+    <p>@item</p>
+}
+<br />
+
+@foreach (var item in ViewBag.Friends)
+{
+    <p>@item</p>
+}
+<h1>Dynamic Id: @ViewBag.Obj.Id</h1>
+<h1>Dynamic Title: @ViewBag.Obj.Title</h1>
+
+<h1>Book Class Id: @ViewBag.Book.Id</h1>
+<h1>Book Class Title: @ViewBag.Book.Title</h1>
+

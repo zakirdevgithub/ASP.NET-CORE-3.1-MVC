@@ -1,0 +1,23 @@
+﻿@using Y_Partial_View_Multiple_Images_Pdf_Upload.Models
+@model IEnumerable<BookModel>
+
+@{
+    ViewData["Title"] = "ShowBooks";
+}
+
+
+@*Card Start*@
+<div class="container ">
+    <div class="row">
+        @foreach (var book in Model)
+        {
+          <partial name="_AllBooks" model="@book" />
+        }
+    </div>
+
+</div>
+<br />
+<br />
+<br />
+@*Card End*@
+

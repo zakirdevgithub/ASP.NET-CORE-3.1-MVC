@@ -1,0 +1,19 @@
+﻿@model IEnumerable<ApplicationUser>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>
+                <ul>
+                    <li asp-for="@item.FirstName">Name: @item.FirstName</li>
+                    <li asp-for="@item.UserName">UserName: @item.UserName</li>
+                    <li asp-for="@item.Email">Email: @item.Email</li>
+                </ul>
+            </li>
+        }
+    </ul>
+

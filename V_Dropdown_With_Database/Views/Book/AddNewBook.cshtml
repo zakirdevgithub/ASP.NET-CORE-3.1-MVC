@@ -1,0 +1,63 @@
+﻿@model BookModel
+
+@{
+    ViewData["Title"] = "AddNewBook";
+}
+
+    <div class="container">
+        <h1 class="display-4">Add Book To Database</h1>
+        @if (ViewBag.IsSuccess)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Successfully Added Book!</strong> <a>here</a> is details of this book
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
+        <form method="post" asp-controller="Book" asp-action="AddNewBook">
+            <div class="form-group">
+                <label asp-for="Title"></label>
+                <input type="text" asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Author"></label>
+                <input type="text" asp-for="Author" class="form-control" />
+                <span asp-validation-for="Author"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Description"></label>
+                <input type="text" asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Category"></label>
+                <input type="text" asp-for="Category" class="form-control" />
+                <span asp-validation-for="Category"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TotalPage"></label>
+                <input type="number" asp-for="TotalPage" class="form-control" />
+                <span asp-validation-for="TotalPage"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LanguageId"></label>
+                <select asp-for="LanguageId" class="form-control" asp-items="ViewBag.Language">
+                    <option value="">Select Language</option>
+                </select>
+                <span asp-validation-for="LanguageId"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Add New Book</button>
+            </div>
+
+        </form>
+    </div>
+

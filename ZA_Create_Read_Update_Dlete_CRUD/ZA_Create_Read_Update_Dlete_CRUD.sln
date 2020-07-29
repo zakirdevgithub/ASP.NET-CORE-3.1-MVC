@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZA_Create_Read_Update_Dlete_CRUD", "ZA_Create_Read_Update_Dlete_CRUD.csproj", "{8048574B-B71F-4C95-931B-C741B1E67D3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8048574B-B71F-4C95-931B-C741B1E67D3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8048574B-B71F-4C95-931B-C741B1E67D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8048574B-B71F-4C95-931B-C741B1E67D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8048574B-B71F-4C95-931B-C741B1E67D3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {82B277FF-9C2F-4B33-84F8-BC93D525BC44}
+	EndGlobalSection
+EndGlobal

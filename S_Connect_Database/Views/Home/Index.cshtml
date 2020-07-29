@@ -1,0 +1,10 @@
+﻿@{ 
+    ViewData["Title"] = "Home";
+}
+
+<h1>@ViewData["Welcome"]</h1>
+@{ 
+    var title = ViewData["MyBook"] as Book;
+}
+<h2>Book Name: @title.Title</h2>
+

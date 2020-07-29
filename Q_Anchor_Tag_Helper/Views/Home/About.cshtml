@@ -1,0 +1,11 @@
+﻿@{ 
+    ViewData["Title"] = "About Page";
+}
+
+@{ 
+    var book = ViewData["Book"] as Book;
+}
+
+<h1>@book.Id</h1>
+<h1>@book.Author</h1>
+

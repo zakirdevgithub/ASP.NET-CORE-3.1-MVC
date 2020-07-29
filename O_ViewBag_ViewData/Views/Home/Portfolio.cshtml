@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Portfolio";
+    
+}
+@{ 
+    var names = ViewData["Names"] as List<string>;
+}
+
+    <h1> @ViewData["message"]</h1>
+    @foreach(var item in names)
+    {
+        <h2>@item</h2>
+    }
+
+@{ 
+    var BookClass = ViewData["data"] as O_ViewBag_ViewData.Models.Book;
+}
+<h1>@BookClass.Id</h1>
+<h1>@BookClass.Title</h1>
+
+@{
+    dynamic myData = ViewData["info"];
+}
+
+<h1>Name: @myData.Name</h1>
+<h1>Age: @myData.Age</h1>
+

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T_Form_Validation", "T_Form_Validation.csproj", "{7DA008B4-E96D-40BB-9E0B-CC7773D78B5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DA008B4-E96D-40BB-9E0B-CC7773D78B5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DA008B4-E96D-40BB-9E0B-CC7773D78B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DA008B4-E96D-40BB-9E0B-CC7773D78B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DA008B4-E96D-40BB-9E0B-CC7773D78B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7A733A38-DAE7-4A1C-847C-2D35C35A5F2E}
+	EndGlobalSection
+EndGlobal

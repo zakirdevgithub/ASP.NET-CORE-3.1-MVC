@@ -1,0 +1,29 @@
+﻿
+
+<h1>@ViewData["Message"]</h1>
+<h1>@ViewData["Number"]</h1>
+@foreach (var item in ViewData["Numbers"] as int[])
+{
+    <p>@item</p>
+}
+<br />
+
+@foreach (var item in ViewData["Friends"] as List<string>)
+{
+    <p>@item</p>
+}
+
+@{
+    dynamic data = ViewData["obj"];
+}
+
+<h1>Dynamic Id: @data.Id</h1>
+<h1>Dynamic Title: @data.Title</h1>
+
+@{ 
+    var classData = ViewData["Book"] as Book;
+}
+
+<h1>Book Class Id: @classData.Id</h1>
+<h1>Book Class Title: @classData.Title</h1>
+

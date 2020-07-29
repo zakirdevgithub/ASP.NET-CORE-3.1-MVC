@@ -1,0 +1,8 @@
+﻿body {
+}
+.img-jumbo {
+    
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/coverphoto.png');
+    background-size:100%,100%;
+    background-repeat:no-repeat;
+}

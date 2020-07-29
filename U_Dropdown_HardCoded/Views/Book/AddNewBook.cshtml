@@ -1,0 +1,98 @@
+﻿@using U_Dropdown_HardCoded.Enums
+@model Book
+
+@{
+    ViewData["Title"] = "AddNewBook";
+}
+
+    <div class="container">
+        <h1 class="display-4">Add New Book to Database</h1>
+        @if (ViewBag.IsSuccess==true)
+        {
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Successfully Added Book!</strong> <a>here</a> is details of this book
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
+    <form method="Post" asp-controller="Book" asp-action="AddNewBook">
+        <div asp-validation-summary="All"></div>
+
+        <div class="form-group">
+            <label asp-for="Title"></label>
+            <input type="text" asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Author"></label>
+            <input type="text" asp-for="Author" class="form-control" />
+            <span asp-validation-for="Author" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Category"></label>
+            <input type="text" asp-for="Category" class="form-control" />
+            <span asp-validation-for="Category" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="TotalPage"></label>
+            <input type="number" asp-for="TotalPage" class="form-control" />
+            <span asp-validation-for="TotalPage" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="LanguageEnums"></label>
+            <select asp-for="LanguageEnums" class="form-control" asp-items="Html.GetEnumSelectList<LanguageEnum>()">
+                <option value="">Select Language</option>
+                @*<option value="Bengali">Bengali</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>*@
+            </select>
+            <span asp-validation-for="LanguageEnums" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Language"></label>
+            <select asp-for="Language" class="form-control" asp-items="ViewBag.LanguageList">
+                <option value="">Select Language</option>
+                @*<option value="Bengali">Bengali</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>*@
+            </select>
+            <span asp-validation-for="Language" class="text-danger"></span>
+        </div>
+
+
+        <div class="form-group">
+            <label asp-for="MultipleLanguage"></label>
+            <select asp-for="MultipleLanguage" class="form-control" asp-items="ViewBag.LanguageList" multiple>
+                <option value="">Select Language</option>
+                @*<option value="Bengali">Bengali</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>*@
+            </select>
+            <span asp-validation-for="Language" class="text-danger"></span>
+        </div>
+
+        <div>
+            <button type="submit" class="btn btn-success">Add New Book</button>
+            <button type="reset" class="btn btn-warning">Reset</button>
+        </div>
+    </form>
+
+    </div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+

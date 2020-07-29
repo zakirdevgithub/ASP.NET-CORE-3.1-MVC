@@ -1,0 +1,182 @@
+﻿
+@model Book
+
+@{ 
+    var parameter = new Dictionary<string,string>()
+    {
+        {"name","zakir" },
+        {"age", "25" },
+        {"profession","Programmer" }
+    };
+}
+
+
+<div class="container m-4">
+    <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="container">
+                <div class="carousel slide" id="myslider" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="~/images/01.jpg" class="img-fluid" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="~/images/02.jpg" class="img-fluid" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="~/images/03.jpg" class="img-fluid" />
+                        </div>
+
+                    </div>
+
+                    <ul class="carousel-indicators">
+                        <li data-target="#myslider" data-slide-to="0" class="active"></li>
+                        <li data-target="#myslider" data-slide-to="1" class=""></li>
+                        <li data-target="#myslider" data-slide-to="2" class=""></li>
+                    </ul>
+
+                    <a href="#myslider" data-slide="prev" class="carousel-control-prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+
+                    <a href="#myslider" data-slide="next" class="carousel-control-next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+
+            </div>
+            <br /><br />
+
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="container">
+                <h2 class="text-success">@Model.Title</h2>
+                <h3>By: @Model.Author</h3>
+                <p>@Model.Description</p>
+                <a asp-all-route-data="@parameter" class="btn btn-outline-info">Read More</a>
+
+            </div>
+            <br /><br />
+
+            <div class="container">
+                <ul class="list-group">
+                    <li class="list-group-item">Category:@Model.Category</li>
+                    <li class="list-group-item">Pages:@Model.Pages</li>
+                </ul><br /><br />
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+
+</div>
+
+@*Card Start*@
+<div class="container ">
+    <h1 class="display-2" id="similarBooks">Similar Books</h1>
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+            <div class="card shadow-sm">
+                <img src="~/images/01.jpg" class="card-img" />
+                <div class="card-body">
+                    <h4 class="card-title text-center">Title</h4>
+                    <p class="card-text text-center">Description</p>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text-left"><button class="btn btn-warning">Buy Now</button></p>
+                        </div>
+                        <div class="col-6">
+                            <p class="text-right">Author</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+            <div class="card shadow-sm">
+                <img src="~/images/02.jpg" class="card-img" />
+                <div class="card-body">
+                    <h4 class="card-title text-center">Title</h4>
+                    <p class="card-text text-center">Description</p>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text-left"><button class="btn btn-warning">Buy Now</button></p>
+                        </div>
+                        <div class="col-6">
+                            <p class="text-right">Author</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+            <div class="card shadow-sm">
+                <img src="~/images/03.jpg" class="card-img" />
+                <div class="card-body">
+                    <h4 class="card-title text-center">Title</h4>
+                    <p class="card-text text-center">Description</p>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text-left"><button class="btn btn-warning">Buy Now</button></p>
+                        </div>
+                        <div class="col-6">
+                            <p class="text-right">Author</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<br />
+<br />
+<br />
+@*Card End*@
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+

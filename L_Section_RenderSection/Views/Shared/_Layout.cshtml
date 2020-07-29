@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+
+
+    <script src="~/jquery/jquery.js"></script>
+    <script src="~/lib/js/bootstrap.js"></script>
+
+    @RenderSection("IndexQuery", required: false)
+    @RenderSection("AboutPage", required: false)
+
+</body>
+</html>

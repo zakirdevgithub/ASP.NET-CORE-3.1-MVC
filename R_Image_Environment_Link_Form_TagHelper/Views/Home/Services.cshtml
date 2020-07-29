@@ -1,0 +1,43 @@
+﻿@model Book
+
+<div class="container">
+    <form method="post" asp-controller="Home" asp-action="Services">
+        <div class="form-group">
+            <label asp-for="Title"></label>
+            <input type="text" asp-for="Title" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Author"></label>
+            <input type="text" asp-for="Author" class="form-control"/>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Description"></label> 
+            <textarea asp-for="Description" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="TotalPage"></label>
+            <input asp-for="TotalPage" class="form-control" />
+        </div>
+        
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" />
+        </div>
+    </form>
+
+</div>
+
+<div class="container">
+    <h1 class="display-3">Output</h1>
+    <ul>
+        <li>@ViewBag.Title</li>
+        <li>@ViewBag.Author</li>
+        <li>@ViewBag.Description</li>
+        <li>@ViewBag.TotalPage</li>
+    </ul>
+</div>
+
+
+

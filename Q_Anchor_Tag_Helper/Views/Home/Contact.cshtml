@@ -1,0 +1,58 @@
+﻿@{ 
+    ViewData["Title"] = "Contact Page";
+}
+
+<h1 class="display-1">ViewData</h1>
+<h1>@ViewData["Message"]</h1>
+
+<h1>Numbers</h1>
+<ol>
+    @foreach (var item in ViewData["Numbers"] as int[])
+    {
+        <li>@item</li>
+    }
+</ol>
+<h1>Friends</h1>
+<ol>
+    @foreach (var item in ViewData["Friends"] as List<string>)
+    {
+        <li>@item</li>
+    }
+</ol>
+
+@{ 
+    dynamic objData = ViewData["Obj"];
+}
+<h1>Dynamic</h1>
+<p>@objData.Book.Id</p>
+<p>@objData.Book.Title</p>
+
+@{ 
+    var book = ViewData["Book"] as Book;
+}
+<h1>Book Class</h1>
+<p>@book.Id</p>
+<p>@book.Title</p>
+
+<h1 class="display-1">ViewBag</h1>
+
+<h1>@ViewBag.Country</h1>
+<ul>
+    @foreach (var item in ViewBag.Countries)
+    {
+        <li>@item</li>
+    }
+</ul>
+<h1>Numbers</h1>
+<ul>
+    @foreach (var item in ViewBag.Numbers)
+    {
+        <li>@item</li>
+    }
+</ul>
+
+<h1>@ViewBag.Obj.Book.Id</h1>
+<h1>@ViewBag.Obj.Book.Title</h1>
+<h1>@ViewBag.Obj.Name</h1>
+<h1>@ViewBag.Book.Id</h1>
+<h1>@ViewBag.Book.Title</h1>

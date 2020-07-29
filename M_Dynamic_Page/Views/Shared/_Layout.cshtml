@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <title>Bookstore</title>
+</head>
+<body>
+    <header>
+        @*Navigation Bar Start*@
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <a href="" class="navbar-brand">ZakirDev</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="navbarid">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="/" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Book/GetAllBooks" class="nav-link">Books</a>
+                        </li>
+                        
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+        @*Navigation Bar End*@
+    </header>
+
+    <main role="main" class="m-4">
+
+        @RenderBody()
+    </main>
+
+    @*Footer Start*@
+    <footer class="border-top  text-center" style="margin:95% 0% 5% 0%;" >
+        <div class="container">
+            Copyright &copy; Zakir Hossain @DateTime.Now.Year
+        </div>
+    </footer>
+    @*Footer End*@
+
+
+<script src="~/jquery/jquery.js"></script>
+<script src="~/twitter-bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

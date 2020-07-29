@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] | Boostrore</title>
+    <environment exclude="Development">
+        <link href="http://bootstrapCDNLink.com" 
+              rel="stylesheet"
+              asp-fallback-test-class="sr-only"
+              asp-fallback-test-property="position"
+              asp-fallback-test-value="absolute"
+              asp-fallback-href="~/lib/twitter-bootstrap/css/bootstrap.min.css"
+              />
+    </environment>
+    <environment include="Development">
+        <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    </environment>
+</head>
+<body>
+    <header>
+        @*Navigation Bar Start*@
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <a href="" class="navbar-brand">ZakirDev</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-center" id="navbarid">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a asp-controller="Home" asp-action="Index" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-route="Services" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a asp-route="Portfolio" class="nav-link">Portfolio</a>
+                            @*<a href="/Home/Portfolio" class="nav-link dropdown-toggle" data-toggle="dropdown">Portfolio</a>*@
+                            @*<ul class="dropdown-menu text-center">
+                <li class="dropdown-header"> Web Development</li>
+                <li><a href="#" class="dropdown-item">Link 1</a></li>
+                <li><a href="#" class="dropdown-item">Link 2</a></li>
+                <li><a href="#" class="dropdown-item">Link 3</a></li>
+
+                <li class="dropdown-header"> App Development</li>
+                <li><a href="#" class="dropdown-item">Link 1</a></li>
+                <li><a href="#" class="dropdown-item">Link 2</a></li>
+                <li><a href="#" class="dropdown-item">Link 3</a></li>
+            </ul>*@
+
+                        <li class="nav-item">
+                            <a asp-route="About" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-route="Contact" class="nav-link">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a asp-controller="Book" asp-action="ShowBooks" class="nav-link">BookStore</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a asp-controller="Book" asp-action="AddNewBook" class="nav-link">Add Book</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+        @*Navigation Bar End*@
+
+    </header>
+     <main role="main">
+         @RenderBody()
+     </main> 
+    
+    <environment exclude="Development">
+        <script src="~/lib/jquery/jquery.min.js"></script>
+        <script src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>
+    </environment>
+    <environment include="Development">
+        <script src="~/lib/jquery/jquery.js"></script>
+        <script src="~/lib/twitter-bootstrap/js/bootstrap.js"></script>
+    </environment>
+</body>
+</html>

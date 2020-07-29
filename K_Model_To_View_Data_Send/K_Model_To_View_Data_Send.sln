@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "K_Model_To_View_Data_Send", "K_Model_To_View_Data_Send.csproj", "{D314927A-F2B7-4ED5-A18E-B244A3EDF25A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D314927A-F2B7-4ED5-A18E-B244A3EDF25A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D314927A-F2B7-4ED5-A18E-B244A3EDF25A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D314927A-F2B7-4ED5-A18E-B244A3EDF25A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D314927A-F2B7-4ED5-A18E-B244A3EDF25A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F075056-4AD4-4272-8E6E-4B0936213E3B}
+	EndGlobalSection
+EndGlobal
